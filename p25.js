@@ -18,12 +18,18 @@ function tester(given){
             console.log("Its a lost cause")
         }
     }
+
+    else{
+        console.log("The given number",given,"has to be a +ve number")
+    }
 }
 
+//Test cases
 
-
+tester(-34)
 
 tester(70)
+
 tester(21)
 
 tester(6)
