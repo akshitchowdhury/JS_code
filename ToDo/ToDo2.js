@@ -39,9 +39,40 @@ list.addEventListener('click', (ev)=>{
 
 
 
+function newElement(){
 
+    var li = document.createElement("li");
 
-var list = document.querySelector("li");
-var inputValue = document.getElementById("myInput").ariaValueMax;
-var t = document.createTextNode(inputValue);
-list.appendChild(t)
+    var inputValue = document.getElementById("myInput").value;
+
+    var t = document.createTextNode(inputValue);
+
+    li.appendChild(t);
+    if(inputValue === ''){
+        alert("you must write something")
+    }
+
+    else{
+        document.getElementById("myUL").appendChild(li);
+
+    }
+
+    document.getElementById("myInput").value = ""
+
+    var span = document.createElement("SPAN")
+
+    var textNode = document.createTextNode('\u00D7');
+
+    span.className = "close";
+    span.appendChild(textNode)
+    li.appendChild(span);
+
+    for(i=0; i< close.length; i++){
+        close[i].click = function(){
+
+            var div = this.parentElement;
+            div.style.display = none;
+        }
+    }
+
+}
