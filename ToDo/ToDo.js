@@ -1,5 +1,5 @@
 
-var myNodeList = document.getElementsByTagName("Li");
+var myNodeList = document.getElementsByTagName("LI");
 
 var i;
 
@@ -32,7 +32,7 @@ for(let i=0; i< close.length; i++){
 var list = document.querySelector('ul');
 
 list.addEventListener('click', function(ev){
-    if(ev.target.tagName=== 'Li'){
+    if(ev.target.tagName=== 'LI'){
         ev.target.classList.toggle('checked');
     }
-})
+}, false)
