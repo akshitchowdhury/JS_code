@@ -38,17 +38,30 @@ for(i=0; i< nodeList.length; i++){
 
 }
 
+// var close = document.getElementsByClassName("close");
+
+// var i;
+// for(i = 0; i< close.length; i++){
+
+//     close[i].onclick = function(){
+//         var div = this.parentElement;
+//         div.style.display = "none";
+//     }
+// }
+
 var close = document.getElementsByClassName("close");
 
+
 var i;
-for(i = 0; i< close.length; i++){
 
-    close[i].onclick = function(){
-        var div = this.parentElement;
-        div.style.display = "none";
-    }
+for(i=0; i<close.length; i++){
+
+        close[i].onclick = function(){
+            var div = this.parentElement;
+            div.style.display = "none"
+        }
+
 }
-
 
 
 
