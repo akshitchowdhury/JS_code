@@ -64,6 +64,15 @@ for(i=0; i< close.length;i++){
     }
 }
 
+var list = document.querySelector('ul');
+
+list.addEventListener('click', (e)=>{
+
+    if(e.target.tagName=== 'LI'){
+        e.target.classList.toggle('checked')
+    }
+}, false)
+
 
 
 
