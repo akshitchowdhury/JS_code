@@ -74,6 +74,50 @@ list.addEventListener('click', (e)=>{
 }, false)
 
 
+function newElement(){
+
+   var Item = document.createElement("li");
+
+   var inputValue = document.getElementById("myInput").value
+
+
+   var t = document.createTextNode(inputValue);
+
+   Item.appendChild(t)
+
+
+if(inputValue===''){
+    alert("Type in something");
+
+}
+
+else{
+    document.getElementById("myUL").appendChild(Item);
+}
+
+
+  document.getElementById("myInnput").value = "";
+
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7")
+
+    span.className = "close";
+    span.appendChild(txt);
+    newItem.appendChild(span)
+
+    for(i = 0; i<close.length; i++){
+        close[i].onclick = function(){
+            var div = this.parentElement;
+            div.style.display = "none";
+        }
+    }
+    
+
+}
+
+
+
+
 
 
 
